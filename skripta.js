@@ -8,12 +8,21 @@ window.addEventListener('load', function() {
         picker.fromRGB(Math.floor(Math.random()*255), Math.floor(Math.random()*255), Math.floor(Math.random()*255))
         document.getElementById("barve").appendChild(input);
 	}
+	var odstraniBarve = function(event) {
+		while(document.getElementById("barve").hasChildNodes()){
+		
+		 document.getElementById("barve").removeChild(	document.getElementById("barve").lastChild);
+			
+		}
+			
+	}
 	
 	document.querySelector("#novaBarva") 
 		.addEventListener('click', dodajBarvo);
 		
 	//Odstrani barve
-	
+		document.querySelector("#odstraniBarve") 
+		.addEventListener('click', odstraniBarve);
 	//Stroboskop
 	var vrednosti = [];
 	var minCas = 0;
