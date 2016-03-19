@@ -14,7 +14,7 @@ window.addEventListener('load', function() {
 		 document.getElementById("barve").removeChild(	document.getElementById("barve").lastChild);
 			
 		}
-			
+		
 	}
 	
 	document.querySelector("#novaBarva") 
@@ -61,7 +61,7 @@ window.addEventListener('load', function() {
 			vrednosti.push(barva.innerHTML);
 		}
 		
-		minCas = document.getElementById("min").value;;
+		minCas = document.getElementById("min").value;
 		maxCas = document.getElementById("max").value;
 
 		spremeniBarvo(0);
